@@ -14,7 +14,7 @@ jobs:
   # procura vulnerabilidades na imagem gerada no passo anterior
   scan:
     # somente faz scan se o job anterior concluiu com êxito
-    needs: push
+    # needs: push
     name: Vulnerability Scan
     runs-on: ubuntu-18.04
     steps:
